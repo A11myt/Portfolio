@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+/* Hack */
+    @font-face {
+        font-family: Hack;
+        font-weight: 400;
+        src: url(../assets/fonts/Hack/Hack-Regular.ttf) format("opentype");
+    } 
+    @font-face {
+      font-family: Hack;
+      font-weight: 400;
+      font-style: italic;
+      src: url(../assets/fonts/Hack/Hack-Regular-Italic.ttf) format("opentype");
+  }
+  @font-face {
+      font-family: Hack;
+      font-weight:  700;
+      src: url(../assets/fonts/Hack/Hack-Bold.ttf) format("opentype");
+  }
+  @font-face {
+      font-family: Hack;
+      font-weight: 700;
+      font-style: italic;
+      src: url(../assets/fonts/Hack/Hack-Bold-Italic.ttf) format("opentype");
+  }
+/* DM Mono */
+  @font-face {
+      font-family: DMMono;
+      font-weight: 300;        
+      src: url(../assets/fonts/DM_Mono/DMMono-Light.ttf) format("opentype");
+  }
+  @font-face {
+      font-family: DMMono;
+      font-weight: 300;
+      font-style: italic;
+      src: url(../assets/fonts/DM_Mono/DMMono-Light-Italic.ttf) format("opentype");
+  }
+  @font-face {
+      font-family: DMMono;
+      font-weight: 400;
+      src: url(../assets/fonts/DM_Mono/DMMono-Regular.ttf) format("opentype");
+  }
+  @font-face {
+      font-family: DMMono;
+      font-weight: 400;
+      font-style: italic;
+      src: url(../assets/fonts/DM_Mono/DMMono-Regular-Italic.ttf) format("opentype");
+  }
+  @font-face {
+      font-family: DMMono;
+      font-weight: 500;
+      src: url(../assets/fonts/DM_Mono/DMMono-Medium.ttf) format("opentype");
+  }
+  @font-face {
+      font-family: DMMono;
+      font-weight: 500;
+      font-style: italic;
+      src: url(../assets/fonts/DM_Mono/DMMono-Medium-Italic.ttf) format("opentype");
+  }
+/* Passion One */
+  
+  @font-face {
+      font-family: PassionOne;
+      font-weight: 400;
+      src: url(../assets/fonts/Passion_One/PassionOne-Regular.ttf) format("opentype");
+  }
+  @font-face {
+      font-family: PassionOne;
+      font-weight: 700;
+      src: url(../assets/fonts/Passion_One/PassionOne-Bold.ttf) format("opentype");
+  }
+  @font-face {
+      font-family: PassionOne;
+      font-weight: 900;
+      src: url(../assets/fonts/Passion_One/PassionOne-Bold.ttf) format("opentype");
+  }
+   
+}
+
+@tailwind utilities;
+
+:root {
+    /* white tones */
+    --white: #fefefe;
+    --mainColor: #eee;
+    --lightGray: #dbd8d2;
+    --midGray: #888;
+
+    /* blue tones */
+    --blue: #2A52BE;
+    --blueJeans: #5DADEC;
+    --lightSkyBlue: #87CEFA;
+    --nonPhotoBlue: #A4DDED;
+
+    /* organe tones */
+    --mainOrange: #e0610e;
+    --peachOrange: #FeCC98;
+    --lightOrange: #fdd8b3;
+    --antiqueWhite: #fce9dd;
+    --antiqueWhiteLight: #fff5ef;
+
+    /* black tones */
+    --darkGray: #222;
+}
+
+
+html * {
+    font-size: 14px !important;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+body * {
+    @apply m-0;
+    line-height: 1.25;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@layer base {
+    h1 {
+        @apply font-semibold text-4xl tracking-tighter text-dark-50;
+    }
+
+    h2 {
+        @apply font-light text-3xl;
+    }
+
+    h3 {
+        @apply font-light text-2xl;
+    }
+
+    h4 {
+        @apply font-light text-xl;
+    }
+}
